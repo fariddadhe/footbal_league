@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Proyek Footbal League</string>
+    <string name="league_name">league name</string>
+    <string name="league_description">league description</string>
+    <string name="link_social_media">Link social media</string>
+    <string name="last_match">Last Match</string>
+    <string name="next_match">Next Match</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date">Rab, 08 Jan 2019 | 08:00 PM</string>
+    <string name="home_team">Home Team</string>
+    <string name="home_score">0</string>
+    <string name="strip"> - </string>
+    <string name="away_score">2</string>
+    <string name="awayteam">awayTeam</string>
+    <string name="match_preview">Match Preview</string>
+    <string name="stadium">Stadium</string>
+    <string name="goals">Goals</string>
+    <string name="shots">Shots</string>
+    <string name="lineups">Lineups</string>
+    <string name="goalkeeper">Goalkeeper</string>
+    <string name="midfield">Midfield</string>
+    <string name="forward">Forward</string>
+    <string name="search">Search</string>
+    <string name="team">Team</string>
+    <string name="league">League</string>
+    <string name="favorite">Favorite</string>
+    <string name="table">Table</string>
+    <string name="pl">Pl</string>
+    <string name="w">W</string>
+    <string name="d">D</string>
+    <string name="l">L</string>
+    <string name="f">F</string>
+    <string name="a">A</string>
+    <string name="gd">GD</string>
+    <string name="pts">Pts</string>
+    <string name="team_info">Team Info</string>
+    <string name="player">Player</string>
+    <string name="description">Description</string>
+</resources>

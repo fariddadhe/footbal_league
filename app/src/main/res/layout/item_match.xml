@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardElevation="0.5dp"
+    app:cardCornerRadius="7dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/dateMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorTextExtraLight"/>
+
+        <TextView
+            android:id="@+id/homeTeam"
+            android:textSize="15sp"
+            android:textColor="@color/colorTextLight"
+            android:gravity="end"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/score_layout"
+            android:layout_toLeftOf="@id/score_layout"
+            android:text="@string/home_team"
+            tools:ignore="RelativeOverlap" />
+
+        <LinearLayout
+            android:id="@+id/score_layout"
+            android:clickable="false"
+            android:background="@drawable/layout_rounded_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dateMatch"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/homeScore"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextLight"
+                android:fontFamily="sans-serif-thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strip"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/awayScore"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/awayTeam"
+            android:textSize="15sp"
+            android:textColor="@color/colorTextLight"
+            android:layout_centerVertical="true"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/score_layout"
+            android:layout_toEndOf="@id/score_layout"
+            android:text="@string/awayteam"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
